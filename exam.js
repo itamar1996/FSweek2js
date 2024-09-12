@@ -10,3 +10,15 @@ let Mission1 = (numarr)=>{
     return evennumsarr;
 }
 
+let Mission2 = (str) =>{
+    let wordsarr = str.split(" ");
+    let count = 0;
+    for (let i = 0; i < wordsarr.length; i++) {
+        if(wordsarr[i].length == 4)
+        {
+            count++;
+        }
+    }   
+    return count;
+}
+
