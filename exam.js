@@ -15,13 +15,26 @@ let Mission2 = (str) => {
   return count;
 };
 
-
+let ar1 =["name", "age","city"]
+let ar2 = ["Ariel",22, "Gan Yavne" ]
 let Mission5 = (keysarr, valuesarr) => {
   let obj = new Object();
-  for (let i = 0; i < keysarr.length; i++) {
+  let smallarrlen = 0;
+  if(keysarr.length > valuesarr.length)
+  {
+    smallarrlen = valuesarr.length;
+  }
+  else if(valuesarr.length>keysarr.length)
+  {
+    smallarrlen = keysarr.length;
+  }
+  else{
+    smallarrlen = keysarr.length;
+  }
+  for (let i = 0; i < smallarrlen; i++) {
     obj[keysarr[i]] = valuesarr[i];
   }
-  console.log(obj);
+
   return obj;
 };
 
